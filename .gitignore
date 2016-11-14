@@ -1,0 +1,8 @@
+*.cmake
+*/*/*/*/*/*/*/*/*CMakeCache*
+*CMakeFiles
+.project
+.cproject
+.settings/
+*.o
+
