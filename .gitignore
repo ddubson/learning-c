@@ -1,6 +1,7 @@
 *.cmake
-*CMakeCache
+*CMakeCache.txt
 *CMakeFiles
+*Makefile
 .project
 .cproject
 .settings/
