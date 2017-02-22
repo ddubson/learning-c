@@ -6,4 +6,5 @@
 .cproject
 .settings/
 *.o
-
+*.app
+a.out

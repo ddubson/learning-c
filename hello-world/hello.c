@@ -6,7 +6,16 @@
  */
 #include <stdio.h>
 
-int main(int argc, char** argv) {
+int add(int x, int y);
+
+main() {
+	int sum;
+
 	printf("Hello World!\n");
+	sum = add(2,4);
 	return 0;
+}
+
+int add(int x, int y) {
+	return x + y;
 }
