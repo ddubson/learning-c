@@ -8,3 +8,6 @@
 *.o
 *.app
 a.out
+Debug/
+.DS_Store
+
