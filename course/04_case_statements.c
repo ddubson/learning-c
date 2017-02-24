@@ -9,6 +9,7 @@
 #define SATURDAY 7
 /*
   switch can only be used with 'char' or 'int'
+  switch stmts can only be used for equality checks
 */
 int main() {
   int dayOfWeek = 0;
