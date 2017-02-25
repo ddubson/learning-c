@@ -1,6 +1,11 @@
 #include <stdio.h>
 #define m1
 
+// PI -> macro template
+// 3.14.15 -> macro expansion
+#define PI 3.1415
+#define AREA(x) (3.14*x*x)
+
 void initFunction();
 void endFunction();
 
@@ -11,6 +16,9 @@ void endFunction();
 #pragma exit endFunction 100
 
 int main() {
+  printf("pi is %f\n", PI);
+  printf("area is %f\n", AREA(2));
+
   #ifdef m1
     printf("m1 is defined\n");
   #endif

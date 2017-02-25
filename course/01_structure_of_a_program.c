@@ -5,8 +5,9 @@
 // entry function of a program
 int main() {
    int b;
-   
+
    // Read from stdin
+   // Takes in the address on where to send the input content
    scanf("%d", &b);
 
    // Output to stdout
