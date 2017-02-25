@@ -8,6 +8,7 @@ int main() {
 
    // Read from stdin
    // Takes in the address on where to send the input content
+   printf("Enter a number: ");
    scanf("%d", &b);
 
    // Output to stdout

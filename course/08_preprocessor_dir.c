@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define m1
 
 // PI -> macro template
@@ -7,6 +8,13 @@
 #define AREA(x) (3.14*x*x)
 
 void initFunction();
+
+void ex_using_macros();
+
+void ex_conditional_macros();
+
+void ex_os_based_macros();
+
 void endFunction();
 
 // Run before the main function
@@ -16,37 +24,48 @@ void endFunction();
 #pragma exit endFunction 100
 
 int main() {
-  printf("pi is %f\n", PI);
-  printf("area is %f\n", AREA(2));
+    ex_using_macros();
+    ex_conditional_macros();
+    ex_os_based_macros();
 
-  #ifdef m1
-    printf("m1 is defined\n");
-  #endif
+    return 0;
+}
 
-  // Undefine a macro
-  #undef m1
-
-  #ifdef m1
-    printf("Still defined? Nope!\n");
-  #endif
-
-  #ifdef m2
-    printf("this should be silent\n");
-  #endif
-
-  #ifdef windows
+void ex_os_based_macros() {
+#ifdef windows
     printf("I'm in Windows.\n");
-  #else
+#else
     printf("I'm not on Windows.\n");
-  #endif
+#endif
 
-  return 0;
+}
+
+void ex_conditional_macros() {
+#ifdef m1
+    printf("m1 is defined\n");
+#endif
+
+    // Undefine a macro
+#undef m1
+
+#ifdef m1
+    printf("Still defined? Nope!\n");
+#endif
+
+#ifdef m2
+    printf("this should be silent\n");
+#endif
+}
+
+void ex_using_macros() {
+    printf("pi is %f\n", PI);
+    printf("area is %f\n", AREA(2));
 }
 
 void initFunction() {
-  printf("Initializing.\n");
+    printf("Initializing.\n");
 }
 
 void endFunction() {
-  printf("Quitting.\n");
+    printf("Quitting.\n");
 }

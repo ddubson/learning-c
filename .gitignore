@@ -11,3 +11,5 @@ a.out
 Debug/
 .DS_Store
 *.exe
+.idea/
+cmake-build-debug/
