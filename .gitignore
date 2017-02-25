@@ -10,4 +10,4 @@
 a.out
 Debug/
 .DS_Store
-
+*.exe
