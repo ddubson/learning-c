@@ -1,15 +1,15 @@
 #include <stdio.h>
 
+// Define a function pointer
+typedef int (*compare_p)(int,int);
+
 int compare(int,int);
-void compareBy(int (*compare_p)(int a, int b));
+void compareBy(compare_p);
 
 int main() {
   compareBy(compare);
   return 0;
 }
-
-// Define a function pointer
-typedef int (*compare_p)(int,int);
 
 // compare_p is the name of the function pointer
 void compareBy(compare_p cmp) {

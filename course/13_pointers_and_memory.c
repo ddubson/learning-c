@@ -54,6 +54,7 @@ int* printArray(int numbers[], int sizeOfArray) {
     printf("[%p] %d \n", &numbers[i], numbers[i]);
   }
   printf("\n");
+
   return numbers;
 }
 
@@ -63,6 +64,14 @@ int* printArrayViaPointer(int* numbers, int sizeOfArray){
     printf("[%p] %d\n", &numbers[i], numbers[i]);
   }
   printf("\n[%p] %d (Garbage value beyond array bound!!)\n", &numbers[4], numbers[4]);
+
+  printf("\nPrint Array (Traversing via ptr arithmetic):\n");
+  int counter = 0;
+  while(counter < sizeOfArray) {
+    printf("[%p] %d\n", numbers+counter, *(numbers+counter));
+    counter++;
+  }
+  printf("\n");
 
   return numbers;
 }
