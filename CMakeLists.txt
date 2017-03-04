@@ -7,6 +7,9 @@ set(HELLO_WORLD_SRC hello-world/hello.c)
 set(FAHRENHEIT_SRC fahrenheit-celsius-table/fc_table.c)
 set(LL_TRAVERSAL linked_list_traversal.c)
 set(NEEDLE_HAYSTACK needle_haystack.c)
+
+set(WIN32_01_SIMPLE windows/01_simple_win32.c)
+
 set(STEP1 fundamentals/01_structure_of_a_program.c)
 set(STEP2 fundamentals/02_data_types.c)
 set(STEP3 fundamentals/03_if_statements.c)
@@ -27,6 +30,9 @@ add_executable(linked_list_traversal ${LL_TRAVERSAL})
 add_executable(hello_world ${HELLO_WORLD_SRC})
 add_executable(fahrenheit-celsius-table ${FAHRENHEIT_SRC})
 add_executable(needle_haystack ${NEEDLE_HAYSTACK})
+
+add_executable(win32_simple ${WIN32_01_SIMPLE})
+
 add_executable(01_structure_of_a_program ${STEP1})
 add_executable(02_data_types ${STEP2})
 add_executable(03_if_statements ${STEP3})
