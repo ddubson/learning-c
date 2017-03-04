@@ -8,13 +8,13 @@ typedef struct point3D {
 } point_3D;
 
 typedef struct fullName {
-    char* first_name;
-    char* middle_name;
-    char* last_name;
+    char *first_name;
+    char *middle_name;
+    char *last_name;
 } fullName;
 
 typedef struct telephone {
-    char* phone;
+    char *phone;
 } telephone;
 
 typedef struct personalInfo {
@@ -31,7 +31,7 @@ int main() {
     point.x = 4;
     point.y = 3;
     point.z = 5;
-
+    printf("%d, %d, %d\n", point.x, point.y, point.z);
 
     return 0;
 }
