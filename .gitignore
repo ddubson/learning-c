@@ -1,10 +1,10 @@
 *.cmake
-*CMakeCache.txt
 *CMakeFiles
-*Makefile
 .project
 .cproject
 .settings/
+*.gch
+*.res
 *.o
 *.app
 a.out
